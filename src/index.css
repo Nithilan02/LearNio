@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* LearNio Educational Game Design System */
+@layer base {
+  :root {
+    /* Core Colors */
+    --background: 42 100% 95%;
+    --foreground: 280 90% 15%;
+    
+    /* Educational Theme */
+    --primary: 280 75% 45%;
+    --primary-foreground: 42 100% 98%;
+    --primary-glow: 280 75% 65%;
+    
+    --secondary: 190 80% 55%;
+    --secondary-foreground: 280 90% 15%;
+    
+    --accent: 45 100% 60%;
+    --accent-foreground: 280 90% 15%;
+    
+    /* Game Elements */
+    --game-bg: 240 15% 8%;
+    --game-snake: 120 75% 50%;
+    --game-food: 30 100% 60%;
+    --game-correct: 120 60% 45%;
+    --game-wrong: 0 75% 55%;
+    
+    /* Cards & UI */
+    --card: 42 100% 98%;
+    --card-foreground: 280 90% 15%;
+    --card-glow: 280 40% 85%;
+    
+    --muted: 280 15% 75%;
+    --muted-foreground: 280 60% 35%;
+    
+    --border: 280 20% 85%;
+    --input: 280 20% 90%;
+    --ring: 280 75% 45%;
+    
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(280 75% 45%), hsl(280 75% 65%));
+    --gradient-hero: linear-gradient(135deg, hsl(42 100% 95%), hsl(190 80% 85%));
+    --gradient-card: linear-gradient(145deg, hsl(42 100% 98%), hsl(280 40% 95%));
+    
+    /* Shadows */
+    --shadow-glow: 0 10px 40px hsl(280 75% 45% / 0.3);
+    --shadow-card: 0 8px 30px hsl(280 40% 40% / 0.15);
+    --shadow-button: 0 4px 15px hsl(280 75% 45% / 0.4);
+    
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --bounce-gentle: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    
+    --radius: 1rem;
+  }
+
+  .dark {
+    --background: 240 15% 8%;
+    --foreground: 42 100% 95%;
+    
+    --primary: 280 75% 65%;
+    --primary-foreground: 240 15% 8%;
+    --primary-glow: 280 75% 85%;
+    
+    --secondary: 190 80% 65%;
+    --secondary-foreground: 240 15% 8%;
+    
+    --accent: 45 100% 70%;
+    --accent-foreground: 240 15% 8%;
+    
+    --card: 240 15% 12%;
+    --card-foreground: 42 100% 95%;
+    --card-glow: 280 40% 20%;
+    
+    --muted: 280 15% 25%;
+    --muted-foreground: 280 60% 65%;
+    
+    --border: 280 20% 20%;
+    --input: 280 20% 15%;
+    
+    --gradient-hero: linear-gradient(135deg, hsl(240 15% 8%), hsl(280 20% 12%));
+    --gradient-card: linear-gradient(145deg, hsl(240 15% 12%), hsl(280 20% 15%));
+    
+    --shadow-glow: 0 10px 40px hsl(280 75% 65% / 0.4);
+    --shadow-card: 0 8px 30px hsl(0 0% 0% / 0.5);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
